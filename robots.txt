@@ -1,5 +1,4 @@
 # robots.txt
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://www.aaththi.com
+Sitemap: https://www.aaththi.com/sitemap.xml
