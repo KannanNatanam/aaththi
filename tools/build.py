@@ -343,6 +343,16 @@ def build_product(p):
         f'<button type="button" data-full="{img(rel, p, n)}" aria-current="{"true" if i == 0 else "false"}" aria-label="Show image {i + 1}">'
         f'<img src="{img(rel, p, n)}" alt="{e(alt_base)}, image {i + 1}" loading="lazy" width="120" height="120"></button>'
         for i, n in enumerate(imgs))
+    video_main = ""
+    if p.get("video"):
+        # Video goes in second place in the gallery, after the main product photo.
+        vthumb = (f'<button type="button" class="vthumb" data-video="{img(rel, p, p["video"])}" aria-current="false" aria-label="Play product video">'
+                  f'<img src="{img(rel, p, p["video_poster"])}" alt="" loading="lazy" width="120" height="120">'
+                  f'<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></button>')
+        first_end = thumbs.index("</button>") + len("</button>")
+        thumbs = thumbs[:first_end] + vthumb + thumbs[first_end:]
+        video_main = (f'<video id="main-video" controls playsinline preload="none" poster="{img(rel, p, p["video_poster"])}" hidden>'
+                      f'<source data-src="{img(rel, p, p["video"])}" type="video/mp4">Your browser does not support video.</video>')
     feats = "".join(
         f'<li>{"<strong>" + e(b["title"]) + "</strong>" if b["title"] else ""}<p>{e(b["text"])}</p></li>'
         for b in p["bullets"])
@@ -358,7 +368,8 @@ def build_product(p):
   </nav>
   <div class="pdp">
     <div class="gallery">
-      <div class="main"><img id="main-img" src="{img(rel, p, imgs[0])}" alt="{e(alt_base)}" width="1200" height="1200" fetchpriority="high"></div>
+      <div class="main"><img id="main-img" src="{img(rel, p, imgs[0])}" alt="{e(alt_base)}" width="1200" height="1200" fetchpriority="high">{video_main}</div>
+      {'<p class="video-hint"><button type="button" class="link-arrow" id="watch-video">&#9658; Watch the video</button></p>' if p.get("video") else ""}
       <div class="thumbs">{thumbs}</div>
     </div>
     <div class="buybox">
