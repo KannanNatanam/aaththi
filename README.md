@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34515948/README.md)
 # aaththi.com: AATHTHI brand website
 
 A fast, static website for GitHub Pages. It shows every AATHTHI product, and each
@@ -33,6 +32,9 @@ After editing it, run this from the folder:
 Then upload the changed files. Full steps are at the top of `tools/build.py`.
 
 - **Show or hide a product:** set `"active": true` or `false`.
+- **Product video:** save it as `assets/products/<slug>/video.mp4` (720p, under about 5 MB) with a
+  `video-poster.webp` still frame, and add `"video": "video.mp4", "video_poster": "video-poster.webp"`
+  to that product in `data/products.json`.
 - **New product images:** put them in `assets/products/<slug>/` as `1.webp`, `2.webp`
   and so on, plus `thumb.webp`.
 
