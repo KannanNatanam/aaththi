@@ -58,7 +58,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HDBQ43VL",
@@ -101,7 +103,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HDB9KH23",
@@ -144,7 +148,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HD7VZR1M",
@@ -186,7 +192,9 @@
     "6.webp",
     "7.webp",
     "8.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HD1GPH59",
@@ -229,7 +237,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HD87DF4D",
@@ -272,7 +282,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HDCK9KJM",
@@ -315,7 +327,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HDBCM7FC",
@@ -358,7 +372,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HD7CXPCJ",
@@ -400,7 +416,9 @@
     "6.webp",
     "7.webp",
     "8.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   },
   {
    "asin": "B0HDCGZFQS",
@@ -443,7 +461,9 @@
     "7.webp",
     "8.webp",
     "9.webp"
-   ]
+   ],
+   "video": "video.mp4",
+   "video_poster": "video-poster.webp"
   }
  ]
 }
